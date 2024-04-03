@@ -18,11 +18,14 @@
 #import "Tweaks/YouTubeHeader/YTIPivotBarItemRenderer.h"
 #import "Tweaks/YouTubeHeader/YTIBrowseRequest.h"
 #import "Tweaks/YouTubeHeader/YTIButtonRenderer.h"
+#import "Tweaks/YouTubeHeader/YTIElementRenderer.h"
 #import "Tweaks/YouTubeHeader/YTISectionListRenderer.h"
+#import "Tweaks/YouTubeHeader/YTWatchNextResultsViewController.h"
 #import "Tweaks/YouTubeHeader/YTPlayerOverlay.h"
 #import "Tweaks/YouTubeHeader/YTPlayerOverlayProvider.h"
 #import "Tweaks/YouTubeHeader/YTReelWatchPlaybackOverlayView.h"
 #import "Tweaks/YouTubeHeader/YTInlinePlayerBarContainerView.h"
+#import "Tweaks/YouTubeHeader/YTInnerTubeCollectionViewController.h"
 #import "Tweaks/YouTubeHeader/YTPivotBarItemView.h"
 
 // Hide buttons under the video player by @PoomSmart
@@ -54,6 +57,11 @@
 // YTTapToSeek - https://github.com/bhackel/YTTapToSeek
 @interface YTMainAppVideoPlayerOverlayViewController : UIViewController
 - (CGFloat)totalTime;
+@end
+
+// Enable Premium logo - @bhackel
+@interface YTITopbarLogoRenderer : NSObject
+@property(readonly, nonatomic) YTIIcon *iconImage;
 @end
 
 // uYouPlus
